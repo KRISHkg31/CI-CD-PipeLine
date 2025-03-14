@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Clone Code') {
             steps {
-                git 'https://github.com/KRISHkg31/CI-CD-PipeLine' // Add your GitHub repo URL
+                git branch: 'main', 
+                    url: 'https://github.com/KRISHkg31/CI-CD-PipeLine'
             }
         }
         stage('Build') {
