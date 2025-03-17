@@ -49,29 +49,21 @@
     <li>A webhook triggers the CI/CD process, initiating the pipeline.</li>
 </ul>
 
-<h3>2. Continuous Integration (Jenkins & Maven)</h3>
+<h3>2. Continuous Integration (Github Actions(CI/CD))</h3>
 <ul>
-    <li>Jenkins orchestrates the CI/CD pipeline.</li>
-    <li>Maven compiles the code and builds the project.</li>
+    <li>Github Actions orchestrates the CI/CD pipeline.</li>
 </ul>
 
-<h3>3. Code Quality & Testing (SonarQube)</h3>
-<ul>
-    <li>SonarQube scans the code for quality and security vulnerabilities.</li>
-    <li>If the code passes quality checks, automated tests run to verify functionality.</li>
-</ul>
-
-<h3>4. Containerization & Image Deployment (Docker & DockerHub)</h3>
+<h3>3. Containerization & Image Deployment (Docker & DockerHub)</h3>
 <ul>
     <li>Upon successful tests, a Docker image is created.</li>
     <li>The image is pushed to DockerHub for versioned storage and access.</li>
 </ul>
 
-<h3>5. Continuous Deployment (ArgoCD & Kubernetes)</h3>
+<h3>4. Continuous Deployment ( Kubernetes)</h3>
 <ul>
     <li>A script updates the Kubernetes deployment configuration with the new image.</li>
     <li>The updated configuration is committed to the Manifests Repository.</li>
-    <li>ArgoCD detects changes, automatically updates the cluster, and deploys the latest application version.</li>
 </ul>
 
 
